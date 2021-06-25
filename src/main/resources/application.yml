@@ -1,2 +1,9 @@
-server:
-  port: 9081
+spring:
+  application:
+    name: school-student-registration-api
+  cloud:
+    config:
+      name: school-student-registration
+      uri: http://localhost:8088
+  profiles:
+    active: dev
